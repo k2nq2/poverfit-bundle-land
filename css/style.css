@@ -332,7 +332,7 @@ header .header-btn-item {
         line-height: 92%;
         text-transform: uppercase;
         color: #fff;
-        max-width: 27rem; /* 400px */
+        max-width: 40rem; /* 400px */
     }
     
     header .undertitle-text {
