@@ -92,7 +92,7 @@ ul {
         margin: 0;
     }
     .title{
-        font-size: 4.4rem;
+        font-size: 4.5rem;
     }
     .header {
         padding: 2rem 2rem 0 2rem;
@@ -280,7 +280,7 @@ header .header-btn-item {
 @media(max-width: 600px){
     header .header-bg-wrap {
         padding-top: 1.25rem; /* 20px */
-        padding: 0 3.3rem; /* 135px */
+        padding: 0 2.9rem; /* 135px */
         background-image: url(../images/header-bg-mob.png);
         background-repeat: no-repeat;
         background-size: cover;
