@@ -2004,6 +2004,7 @@ iframe{
 @media(max-width:600px){
     .c6 {
         margin-top: 6.25rem; /* 100px */
+        overflow:hidden;
     }
     
     .c6-img {
