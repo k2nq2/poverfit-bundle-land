@@ -1802,7 +1802,7 @@ iframe{
     
     .slider-container {
         width: 100%;
-        max-width: 87.5rem; /* 1400px */
+        max-width: 1000rem; /* 1400px */
         overflow: hidden;
         position: relative;
         margin-left: 0rem; /* 100px */
