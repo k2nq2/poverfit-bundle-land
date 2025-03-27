@@ -2052,7 +2052,7 @@ iframe{
     .visible3{
         opacity: 1;
         margin-left: 0rem;
-        tranform: translateX(0rem);
+        transform: translateX(0rem);
     }
     
     .c6-flying-div p {
@@ -2088,7 +2088,7 @@ iframe{
     .visible4{
         margin-left: 0rem;
         opacity: 1;
-        tranform: translateX(0rem);
+        transform: translateX(0rem);
     }
     
     .c6-flying-div3 {
@@ -2099,7 +2099,7 @@ iframe{
     .visible5{
         margin-left: 0rem;
         opacity: 1;
-        tranform: translateX(0rem);
+        transform: translateX(0rem);
     }
     .c6-flying-div2 p {
         max-width: 23.625rem; /* 250px */
