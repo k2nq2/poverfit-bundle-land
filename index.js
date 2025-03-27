@@ -26,21 +26,19 @@ document.querySelectorAll('.slider-wrapper').forEach(wrapper => {
     const nextBtn = wrapper.querySelector('#next');
 
     let index = 0;
-    
+    let startX = 0;
+    let moveX = 0;
+    let isSwiping = false;
+
     // Функция для определения текущего шага
     function getStep() {
-        // Проверяем ширину экрана и выбираем шаг
-        if (window.matchMedia('(max-width: 600px)').matches) {
-            return 81; // 50% на экранах до 600px
-        } else {
-            return 33.3; // 33.3% на экранах больше 600px
-        }
+        return window.matchMedia('(max-width: 600px)').matches ? 81 : 33.3;
     }
 
-    const totalSlides = slides.length;
-    const step = getStep(); // Получаем шаг
-    const visibleSlides = Math.floor(100 / step); // Видимых слайдов
-    const maxIndex = totalSlides - visibleSlides; // Последний индекс
+    let totalSlides = slides.length;
+    let step = getStep();
+    let visibleSlides = Math.floor(100 / step);
+    let maxIndex = totalSlides - visibleSlides;
 
     nextBtn.addEventListener('click', () => {
         if (index < maxIndex) {
@@ -64,12 +62,37 @@ document.querySelectorAll('.slider-wrapper').forEach(wrapper => {
         }
     }
 
+    // Добавляем поддержку свайпа
+    slider.addEventListener('touchstart', e => {
+        startX = e.touches[0].clientX;
+        isSwiping = true;
+    });
+
+    slider.addEventListener('touchmove', e => {
+        if (!isSwiping) return;
+        moveX = e.touches[0].clientX - startX;
+    });
+
+    slider.addEventListener('touchend', () => {
+        if (!isSwiping) return;
+        isSwiping = false;
+
+        // Определяем направление свайпа
+        if (moveX < -50 && index < maxIndex) {
+            index++;
+        } else if (moveX > 50 && index > 0) {
+            index--;
+        }
+
+        updateSlider();
+    });
+
     // Обновляем шаг при изменении размера окна
     window.addEventListener('resize', () => {
-        const newStep = getStep();
+        let newStep = getStep();
         if (newStep !== step) {
             step = newStep;
-            updateSlider(); // Обновляем слайдер с новым шагом
+            updateSlider();
         }
     });
 });
