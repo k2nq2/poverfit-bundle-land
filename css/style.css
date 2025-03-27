@@ -422,6 +422,7 @@ header .header-btn-item {
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 0.5rem; /* 5px */
+        padding-top:0.3rem;
     }
     
     .price-old {
@@ -438,6 +439,7 @@ header .header-btn-item {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding-top:0.3rem;
     }
     
     .price-old span {
