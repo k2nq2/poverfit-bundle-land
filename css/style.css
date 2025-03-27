@@ -426,6 +426,7 @@ header .header-btn-item {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-bottom: 0.3rem;
     }
     
     .price-old {
@@ -442,6 +443,7 @@ header .header-btn-item {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding-bottom: 0.3rem;
 
     }
     
