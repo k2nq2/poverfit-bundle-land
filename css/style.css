@@ -391,7 +391,7 @@ header .header-btn-item {
     .header-price-wrap p {
         font-family: var(--font-family);
         font-weight: 400;
-        font-size: 1rem; /* 16px */
+        font-size: 1.6rem; /* 16px */
         line-height: 160%;
         color: #fff;
     }
@@ -2047,11 +2047,12 @@ iframe{
     }
     
     .c6-flying-div1 {
-        transform: rotate(0deg);
+        transform: rotate(0deg) translateX(-32rem);
     }
     .visible3{
         opacity: 1;
         margin-left: 0rem;
+        tranform: translateX(0rem);
     }
     
     .c6-flying-div p {
@@ -2080,23 +2081,25 @@ iframe{
     
     .c6-flying-div2 {
         margin-left: 0rem;
-        transform: rotate(0deg);
+        transform: rotate(0deg) translateX(32rem);
         margin-top: 1rem;
     
     }
     .visible4{
         margin-left: 0rem;
         opacity: 1;
+        tranform: translateX(0rem);
     }
     
     .c6-flying-div3 {
         margin-left: 0rem;
-        transform: rotate(0deg);
+       transform: rotate(0deg) translateX(-32rem);
         margin-top: 1rem;
     }
     .visible5{
         margin-left: 0rem;
         opacity: 1;
+        tranform: translateX(0rem);
     }
     .c6-flying-div2 p {
         max-width: 23.625rem; /* 250px */
