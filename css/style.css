@@ -2188,7 +2188,7 @@ iframe{
 /* При раскрытии вопроса иконка меняет цвет и вращается */
 .accordion-item.active .accordion-header::before {
     transform: rotate(-45deg);
-    color: #dcc6a1;
+    color: #fff;
 }
 
 .accordion-content {
