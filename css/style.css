@@ -2181,7 +2181,7 @@ iframe{
     font-size: 2rem; /* 24px */
     font-weight: 300;
     color: #fff;
-    font-family: var(--font-family);
+    font-family: var(--content-font);
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
