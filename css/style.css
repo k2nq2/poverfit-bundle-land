@@ -1676,7 +1676,7 @@ header .header-btn-item {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    height: 33rem;
+    height: 100%;
 }
 
 .image-box img {
@@ -1829,7 +1829,7 @@ iframe{
         position: relative;
         overflow: hidden;
         border-radius: 1.5rem; /* 10px */
-        height: 44.3rem;
+        height: 100%;
     }
     
     .image-box img {
