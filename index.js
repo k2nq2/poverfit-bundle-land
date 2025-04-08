@@ -213,6 +213,11 @@ window.addEventListener('scroll', function() {
     { url: './images/9.webp', position: '20% 62%' }
   ];
 
+    frames.forEach(frame => {
+    const img = new Image();
+    img.src = frame.url;
+  });
+
   const maskedText = document.getElementById('maskedText');
   let index = 0;
 
@@ -223,7 +228,6 @@ window.addEventListener('scroll', function() {
     index++;
   }, 300);
 
-  // Удаление загрузочного экрана через 2.7 секунды
   setTimeout(() => {
     clearInterval(interval);
     document.getElementById('preloader').style.display = 'none';
